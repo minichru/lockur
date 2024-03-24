@@ -25,7 +25,7 @@ cargo install lockur
 To encrypt a file, use the `encrypt` command with the `--password` flag to specify your encryption password. The encrypted file will be saved with the same name as the original file but with an `.enc` extension.
 
 ```bash
-lockur encrypt input.txt --password yourpassword
+lockur encrypt --password yourpassword input.txt 
 ```
 
 ### Decrypting a File
@@ -33,7 +33,7 @@ lockur encrypt input.txt --password yourpassword
 To decrypt a file, use the `decrypt` command with the `--password` flag to specify the decryption password. The decrypted file will overwrite the original encrypted file.
 
 ```bash
-lockur decrypt input.txt.enc --password yourpassword
+lockur decrypt --password yourpassword input.txt.enc 
 ```
 
 ### Setting a Custom Salt
